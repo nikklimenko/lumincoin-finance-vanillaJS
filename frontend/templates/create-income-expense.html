@@ -1,0 +1,39 @@
+<section class="main">
+    <h1 class="fw-bold mb-5">Создание дохода/расхода</h1>
+    <form class="was-validated" id="form">
+
+        <div class="mb-4">
+            <select class="form-select" aria-label="Тип..." id="type-select" required>
+                <option selected disabled>Тип...</option>
+                <option class="type-option" value="income">Доход</option>
+                <option class="type-option" value="expense">Расход</option>
+            </select>
+        </div>
+
+        <div class="mb-4">
+            <select class="form-select mb-4" aria-label="Категория..." id="category-select" required>
+                <option selected disabled id="not-a-value">Категория...</option>
+            </select>
+        </div>
+
+        <div class="input-group has-validation">
+            <input class="form-control" type="number" placeholder="Сумма в $..." aria-label="Сумма в $"
+                   id="amount-input" required>
+            <div class="invalid-feedback mt-1 align-items-end" id="amount-validate-error">
+                Обязательное поле!
+            </div>
+        </div>
+
+        <div class="input-group has-validation mb-4">
+            <input class="form-control mt-4" type="text" placeholder="Дата..." aria-label="Дата" id="date-input"
+                   required>
+            <div class="invalid-feedback mt-1  align-items-end">
+                Обязательное поле!
+            </div>
+        </div>
+        <input class="form-control  mb-4" type="text" maxlength="200" placeholder="Комментарий..."
+               aria-label="Комментарий" id="comment-input">
+        <button class="btn btn-success disabled" id="create-button">Создать</button>
+        <a href="#/income-and-expense" class="btn btn-danger">Отмена</a>
+    </form>
+</section>

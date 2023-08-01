@@ -1,0 +1,116 @@
+.categories{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1221px;
+    gap: 20px;
+}
+
+.category {
+    box-sizing: border-box;
+    width: 352px;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+    padding: 20px;
+    transition: .5s;
+}
+
+.add-category {
+    min-height: 121px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.add-category svg{
+    display: inline-block;
+    width: 15px;
+    height: 16px;
+}
+
+.category-title{
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 33px;
+    color: #290661;
+}
+
+.category:hover{
+    border-color: #0D6EFD;
+}
+
+.add-category-plus{
+    transition: .5s;
+}
+
+.add-category:hover .add-category-plus{
+    transform: scale(1.5);
+}
+
+/*MODAL*/
+
+.modal-overlay{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .2s ease;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-delete-category{
+    max-width: 530px;
+    padding: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CED4DA;
+    border-radius: 12px;
+}
+
+.modal-delete-category-text{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #290661;
+    margin-bottom: 20px;
+    text-align: center;
+
+}
+
+.modal-delete-category-action{
+    text-align: center;
+}
+
+/*INPUTS*/
+
+input[type='text'],
+input[type='number'],
+.input-group.has-validation,
+select.form-select{
+    width: 397px;
+}
+
+
+
+.date-range-picker {
+    display: inline-block;
+}
+
+.date-range-picker input{
+    width: 100px;
+    text-align: center;
+}
+
+.date-range-picker input::placeholder{
+    text-align: center;
+}
+
+.nav-link.menu-dropdown-link.active{
+    border-radius: 0;
+}

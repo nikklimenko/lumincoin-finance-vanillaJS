@@ -1,0 +1,54 @@
+<section class="main">
+    <h1 class="big-title">
+        Главная
+    </h1>
+    <div class="filter mt-5 mb-5">
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="today" autocomplete="off"
+               checked>
+        <label class="btn btn-outline-secondary me-2" for="today">Сегодня</label>
+
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="week" autocomplete="off">
+        <label class="btn btn-outline-secondary me-2" for="week">Неделя</label>
+
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="month" autocomplete="off">
+        <label class="btn btn-outline-secondary me-2" for="month">Месяц</label>
+
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="year" autocomplete="off">
+        <label class="btn btn-outline-secondary me-2" for="year">Год</label>
+
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="all" autocomplete="off">
+        <label class="btn btn-outline-secondary me-2" for="all">Все</label>
+
+        <input type="radio" class="btn-check filter-radio-input" name="options-outlined" id="interval"
+               autocomplete="off">
+        <label class="btn btn-outline-secondary me-2" for="interval">Интервал</label>
+
+        <div class="date-range-picker" id="datepicker">
+            <span>с</span>
+            <input class="form-control-plaintext d-inline-flex interval-input" placeholder="Дата" type="text"
+                   name="start" id="date-from-input" autocomplete="off" disabled required>
+
+            <span>по</span>
+            <input class="form-control-plaintext d-inline-flex interval-input" placeholder="Дата" type="text" name="end"
+                   id="date-to-input" autocomplete="off" disabled required>
+        </div>
+        <div class="invalid-feedback mt-1 align-items-end" id="interval-validate-error">
+            Заполните поля даты начала и окончания периода!
+        </div>
+    </div>
+
+   <div class="chart-pie-items">
+       <div class="chart-pie-item">
+           <h2 class="text-center">Доходы</h2>
+           <div class="chart">
+               <canvas id="chart-income"></canvas>
+           </div>
+       </div>
+       <div class="chart-pie-item">
+           <h2 class="text-center">Расходы</h2>
+           <div class="chart">
+               <canvas id="chart-expense"></canvas>
+           </div>
+       </div>
+   </div>
+</section>

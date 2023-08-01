@@ -1,0 +1,15 @@
+.date-range-picker {
+    display: inline-block;
+}
+
+.date-range-picker input{
+    width: 100px;
+    text-align: center;
+}
+
+.date-range-picker input::placeholder{
+    text-align: center;
+}
+
+
+
